@@ -23,6 +23,9 @@ class Transfer
   end
   
   def reverse_transfer
-    
+    if @status == "complete"
+      @receiver -= @amount
+      @sender += @amount
+    end
   end
 end
