@@ -14,8 +14,9 @@ class Transfer
   
   def execute_transaction
     if self.valid?
-      @sender.
-      
+      @sender.balance -= amount
+      @receiver.blance += amount
+    end
   end
   
   def reverse_transfer
